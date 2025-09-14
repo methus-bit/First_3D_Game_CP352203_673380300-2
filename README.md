@@ -1,1 +1,1 @@
-![killer fish from san diego!!!!](screenshots/killerfish.jpg)
+![killer fish from san diego!!!!](screenshots/pog.gif)
