@@ -1,6 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1757856566
+::res://::1757856985
 5-1 Clean.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::7236796226228226000::1757848077::1757848077::1::::<><><>0<>0<>9913f4fecf6775c98f6fd0c676517b2d<>res://.godot/imported/5-1 Clean.ogg-76e18e706112c2be0933c3b9c1462949.oggvorbisstr::
+export_presets.cfg::TextFile::-1::1757856985::0::1::::<><><>0<>0<><>::
 fish2.tscn::PackedScene::3846323563254799816::1757855957::0::1::::<><><>0<>0<><>::uid://nu53hwm81r88::::res://fish.fbx<>uid://c33yrf8fcjhsk::::res://new_standard_material_3d3.tres
 fish.fbx::PackedScene/PackedScene::955614436627462567::1757851091::1757851289::1::::<><><>0<>0<>8e74006237887de0c39519580894763c<>res://.godot/imported/fish.fbx-7cfbca91f2152e9876b73c22d7ae840d.scn::uid://cjfxdjllb3o5v::::res://fish_0.png
 fish.tscn::PackedScene::4327688531789022105::1757852192::0::1::::<><><>0<>0<><>::uid://nu53hwm81r88::::res://fish.fbx<>uid://c2chnbxganoim::::res://new_standard_material_3d2.tres
@@ -16,7 +17,7 @@ new_standard_material_3d3.tres::StandardMaterial3D/StandardMaterial3D::679741944
 new_standard_material_3d.tres::StandardMaterial3D/StandardMaterial3D::6808829137856652213::1757848524::0::1::::<><><>0<>0<><>::uid://beciefy02r56v::::res://Stylized_Sand_001_SD/Stylized_Sand_001_basecolor.jpg<>uid://ef611xvugkvx::::res://watershadow.png<>uid://rayv1kdabb0c::::res://Stylized_Sand_001_SD/Stylized_Sand_001_height.png<>uid://crrmm6gfglmkj::::res://Stylized_Sand_001_SD/Stylized_Sand_001_normal.jpg<>uid://dm0vm6vaq81gu::::res://Stylized_Sand_001_SD/Stylized_Sand_001_roughness.jpg
 Player.gd::GDScript::9001394967907948641::1757855688::0::1::::<>CharacterBody3D<><>0<>0<><>::
 Player.tscn::PackedScene::8273964046187778922::1757855957::0::1::::<><><>0<>0<><>::uid://d1ilwo7xlp834::::res://Player.gd<>uid://b2wmnr5ryfmxt::::res://fish.tscn<>uid://cylmqfxum2spb::::res://killerfish/killer-fish.wav<>uid://b7aekrbcs28dg::::res://killerfish/killer-fish-2.wav<>uid://vvwwibpua61d::::res://killerfish/killer-fish-3.wav<>uid://dujupj4unmbk2::::res://killerfish/killer-fish-4.wav<>uid://bp2v2xfrc0jms::::res://killerfish/killer-fish-5.wav<>uid://dqkqy1mnv5jaw::::res://killerfish/killer-fish-6.wav<>uid://bn1dknxv4gnjs::::res://killerfish/killer-fish-7.wav<>uid://cwn6a65j0w0pi::::res://splat.mp3
-README.md::TextFile::-1::1757856068::0::1::::<><><>0<>0<><>::
+README.md::TextFile::-1::1757856657::0::1::::<><><>0<>0<><>::
 ScoreLabel.gd::GDScript/GDScript::993429405551857235::1757840552::0::1::::<>Label<><>0<>0<><>::
 splat.mp3::AudioStreamMP3/AudioStreamMP3::6345716740012660298::1757855309::1757855309::1::::<><><>0<>0<>51e54392a32e1147e7c55fee7a9d193f<>res://.godot/imported/splat.mp3-e35858c1ab0de9d870da6b669cd1993d.mp3str::
 ui_theme.tres::Theme/Theme::5930143872682747302::1757840553::0::1::::<><><>0<>0<><>::uid://cyxhh7ddkn62q::::res://fonts/Montserrat-Medium.ttf
@@ -32,6 +33,10 @@ mob_body.tres::StandardMaterial3D/StandardMaterial3D::-1::1757840553::0::1::::<>
 mob_eye.tres::StandardMaterial3D/StandardMaterial3D::-1::1757840553::0::1::::<><><>0<>0<><>::
 player.glb::PackedScene/PackedScene::8964461739428881931::1757840553::1757840561::1::::<><><>0<>0<>888faf6ae4281eadd09c6bedcc72b9b7<>res://.godot/imported/player.glb-08dcfb373480a049995065542e37637b.scn::
 pupil.tres::StandardMaterial3D/StandardMaterial3D::-1::1757840553::0::1::::<><><>0<>0<><>::
+::res://docs/::1757856984
+index.apple-touch-icon.png::CompressedTexture2D::8083851894186371750::1757856984::1757857333::1::::<><><>0<>0<>a6176e23911530b28849db3f662d7541<>res://.godot/imported/index.apple-touch-icon.png-b21a756d869f84af832970a74d8371bc.ctex::
+index.icon.png::CompressedTexture2D::8197394414960676247::1757856984::1757857333::1::::<><><>0<>0<>409cd511b8dcb355a564e398de56c723<>res://.godot/imported/index.icon.png-b92c9a802ad4b78e247784454a6b506f.ctex::
+index.png::CompressedTexture2D::8656298181700167292::1757856984::1757857333::1::::<><><>0<>0<>75cd30660d7b0be25302bebc5d22eed0<>res://.godot/imported/index.png-0c78d14d192abe5f22f8c25928ca1ab8.ctex::
 ::res://fonts/::1757856240
 LICENSE.txt::TextFile/TextFile::-1::1757840553::0::1::::<><><>0<>0<><>::
 Montserrat-Medium.ttf::FontFile/FontFile::6505293508080888906::1757840553::1757840560::1::::<><><>0<>0<>07233739ee8ed56ec1cb0f04a4ff2983<>res://.godot/imported/Montserrat-Medium.ttf-e832861e4ad4110e172112dc430c04b0.fontdata::
