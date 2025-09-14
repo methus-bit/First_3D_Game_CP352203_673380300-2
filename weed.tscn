@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bstc7odat7cj"]
+
+[ext_resource type="PackedScene" uid="uid://da7ctf84xkm5w" path="res://weed.fbx" id="1_vfkmi"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s1iow"]
+albedo_color = Color(0, 0.615686, 0.270588, 1)
+
+[node name="weed" instance=ExtResource("1_vfkmi")]
+
+[node name="Cube" parent="." index="0"]
+material_override = SubResource("StandardMaterial3D_s1iow")

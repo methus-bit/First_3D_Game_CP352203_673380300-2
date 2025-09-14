@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://c4aiok2vj8tdl"]
+
+[ext_resource type="Texture2D" uid="uid://beciefy02r56v" path="res://Stylized_Sand_001_SD/Stylized_Sand_001_basecolor.jpg" id="1_jkprj"]
+[ext_resource type="Texture2D" uid="uid://ef611xvugkvx" path="res://watershadow.png" id="2_1n2cj"]
+[ext_resource type="Texture2D" uid="uid://rayv1kdabb0c" path="res://Stylized_Sand_001_SD/Stylized_Sand_001_height.png" id="2_mxeyg"]
+[ext_resource type="Texture2D" uid="uid://crrmm6gfglmkj" path="res://Stylized_Sand_001_SD/Stylized_Sand_001_normal.jpg" id="3_1n2cj"]
+[ext_resource type="Texture2D" uid="uid://dm0vm6vaq81gu" path="res://Stylized_Sand_001_SD/Stylized_Sand_001_roughness.jpg" id="4_md237"]
+
+[resource]
+albedo_texture = ExtResource("1_jkprj")
+roughness_texture = ExtResource("4_md237")
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+emission_texture = ExtResource("2_1n2cj")
+normal_enabled = true
+normal_texture = ExtResource("3_1n2cj")
+heightmap_enabled = true
+heightmap_texture = ExtResource("2_mxeyg")

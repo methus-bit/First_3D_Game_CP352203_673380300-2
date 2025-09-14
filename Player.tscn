@@ -1,0 +1,59 @@
+[gd_scene load_steps=14 format=3 uid="uid://dp478jyugrn7o"]
+
+[ext_resource type="Script" uid="uid://d1ilwo7xlp834" path="res://Player.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://b2wmnr5ryfmxt" path="res://fish.tscn" id="2_kpjcp"]
+[ext_resource type="AudioStream" uid="uid://cylmqfxum2spb" path="res://killerfish/killer-fish.wav" id="3_wi0c6"]
+[ext_resource type="AudioStream" uid="uid://b7aekrbcs28dg" path="res://killerfish/killer-fish-2.wav" id="4_hp6x6"]
+[ext_resource type="AudioStream" uid="uid://vvwwibpua61d" path="res://killerfish/killer-fish-3.wav" id="5_3tkgg"]
+[ext_resource type="AudioStream" uid="uid://dujupj4unmbk2" path="res://killerfish/killer-fish-4.wav" id="6_l6ohk"]
+[ext_resource type="AudioStream" uid="uid://bp2v2xfrc0jms" path="res://killerfish/killer-fish-5.wav" id="7_oudfo"]
+[ext_resource type="AudioStream" uid="uid://dqkqy1mnv5jaw" path="res://killerfish/killer-fish-6.wav" id="8_d6rpx"]
+[ext_resource type="AudioStream" uid="uid://bn1dknxv4gnjs" path="res://killerfish/killer-fish-7.wav" id="9_r3kul"]
+[ext_resource type="AudioStream" uid="uid://cwn6a65j0w0pi" path="res://splat.mp3" id="10_hp6x6"]
+
+[sub_resource type="SphereShape3D" id="1"]
+radius = 0.792278
+
+[sub_resource type="CylinderShape3D" id="2"]
+height = 0.1438
+radius = 0.883789
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_jatw7"]
+streams_count = 7
+stream_0/stream = ExtResource("3_wi0c6")
+stream_1/stream = ExtResource("4_hp6x6")
+stream_2/stream = ExtResource("5_3tkgg")
+stream_3/stream = ExtResource("6_l6ohk")
+stream_4/stream = ExtResource("7_oudfo")
+stream_5/stream = ExtResource("8_d6rpx")
+stream_6/stream = ExtResource("9_r3kul")
+
+[node name="Player" type="CharacterBody3D"]
+collision_mask = 2147483654
+script = ExtResource("1")
+
+[node name="Pivot" type="Node3D" parent="."]
+
+[node name="fish" parent="Pivot" instance=ExtResource("2_kpjcp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.12007, 0)
+
+[node name="CollisionShape" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.771765, 0)
+shape = SubResource("1")
+
+[node name="MobDetector" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+
+[node name="CollisionShape" type="CollisionShape3D" parent="MobDetector"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.991569, 0)
+shape = SubResource("2")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = SubResource("AudioStreamRandomizer_jatw7")
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("10_hp6x6")
+
+[connection signal="body_entered" from="MobDetector" to="." method="_on_MobDetector_body_entered"]

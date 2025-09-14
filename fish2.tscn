@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu2gnfr3kcnbc"]
+
+[ext_resource type="PackedScene" uid="uid://nu53hwm81r88" path="res://fish.fbx" id="1_4s0hg"]
+[ext_resource type="Material" uid="uid://c33yrf8fcjhsk" path="res://new_standard_material_3d3.tres" id="2_fqapl"]
+
+[node name="fish" instance=ExtResource("1_4s0hg")]
+
+[node name="Skeleton3D" parent="Armature" index="0"]
+bones/0/rotation = Quaternion(-0.00692506, -0.00103671, 0.148051, 0.988955)
+bones/1/rotation = Quaternion(-0.0367524, 0.0212417, -0.393022, 0.918549)
+bones/3/rotation = Quaternion(-3.27448e-06, -0.0046438, 0.999989, -0.000383381)
+bones/4/rotation = Quaternion(-0.0107542, 0.00176913, -0.273657, 0.961766)
+bones/5/rotation = Quaternion(0.0118241, 0.00140595, -0.26046, 0.965411)
+
+[node name="fesh" parent="Armature/Skeleton3D" index="0"]
+material_override = ExtResource("2_fqapl")
+
+[node name="fesh_001" parent="Armature/Skeleton3D" index="1"]
+material_override = ExtResource("2_fqapl")
+
+[node name="fesh_002" parent="Armature/Skeleton3D" index="2"]
+material_override = ExtResource("2_fqapl")
